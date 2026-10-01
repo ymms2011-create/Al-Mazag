@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>المزاج | برجر مشوي على الفحم</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lalezar&family=Poppins:wght@400;500;600;700&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="burgerIcon" viewBox="0 0 64 64">
+    <g stroke="#3d3d3d" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M7 30C7 10 57 10 57 30Z" fill="#b8b8b8"/>
+      <path d="M6 30H58V32q-6.5 6-13 0q-6.500 6-13 0q-6.500 6-13 0q-6.500 6-13 0Z" fill="#8c8c8c"/>
+      <rect x="7" y="36" width="50" height="9" rx="4.5" fill="#5e5e5e"/>
+      <path d="M7 47H57V50a6 6 0 0 1-6 6H13a6 6 0 0 1-6-6Z" fill="#a3a3a3"/>
+    </g>
+    <g fill="#e6e6e6"><ellipse cx="22" cy="21" rx="2.2" ry="1.2" transform="rotate(-20 22 21)"/><ellipse cx="32" cy="18" rx="2.2" ry="1.2"/><ellipse cx="42" cy="21" rx="2.2" ry="1.2" transform="rotate(20 42 21)"/></g>
+  </symbol>
+</svg>
+
+<header>
+  <a href="#" class="brand" id="brandHome" data-i18n="brand">المزاج</a>
+  <div class="lang-wrap" id="langWrap">
+    <button class="lang-btn" id="langBtn" aria-label="Language" aria-haspopup="true" aria-expanded="false">
+      <svg class="globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><span id="langLabel">العربية</span><span class="caret">▾</span>
+    </button>
+    <div class="lang-menu" id="langMenu" role="menu">
+      <button type="button" role="menuitem" data-lang="ar">العربية</button>
+      <button type="button" role="menuitem" data-lang="en">English</button>
+    </div>
+  </div>
+  <nav>
+    <a href="#menu" data-i18n="nav_menu">المنيو</a>
+    <a href="#offers" data-i18n="nav_offers">العروض</a>
+    <a href="#story" data-i18n="nav_story">قصتنا</a>
+    <a href="#reviews" data-i18n="nav_reviews">التقييمات</a>
+    <a href="#contact" data-i18n="nav_contact">تواصل</a>
+    <button class="cart-btn" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="embers" id="embers"></div>
+  <div class="hero-inner">
+    <span class="eyebrow-flame">🔥</span>
+    <h1 data-i18n="brand">المزاج</h1>
+    <p data-i18n="hero_p"></p>
+    <a href="#menu" class="cta" data-i18n="hero_cta"></a>
+  </div>
+</section>
+
+<div class="plain-zone" id="plainZone">
+<div class="burger-bg" id="burgerBg" aria-hidden="true"></div>
+
+<section class="menu" id="menu">
+  <h2 data-i18n="menu_h"></h2>
+  <p class="sub" data-i18n="menu_sub"></p>
+  <div id="menuRoot"></div>
+</section>
+
+<section class="offers" id="offers">
+  <h2 data-i18n="off_h"></h2>
+  <p class="sub" data-i18n="off_sub"></p>
+  <div class="grid">
+    <div class="offer-card">
+      <h3 data-i18n="o1_t"></h3>
+      <p data-i18n="o1_d"></p>
+      <div class="size-select offer-size-select" data-offer="o1">
+        <button type="button" class="size-btn active" data-offer="o1" data-size="single">سنجل</button>
+        <button type="button" class="size-btn" data-offer="o1" data-size="double">دبل</button>
+        <button type="button" class="size-btn" data-offer="o1" data-size="triple">تريبل</button>
+      </div>
+      <div class="row"><span class="offer-price js-price" data-price="200"></span>
+        <button class="add-btn" data-id="o1" data-price="200" data-offer="o1" data-i18n="add"></button></div>
+    </div>
+    <div class="offer-card">
+      <h3 data-i18n="o2_t"></h3>
+      <p data-i18n="o2_d"></p>
+      <div class="row"><span class="offer-price js-price" data-price="190"></span>
+        <button class="add-btn" data-id="o2" data-price="190" data-i18n="add"></button></div>
+    </div>
+    <div class="offer-card">
+      <h3 data-i18n="o3_t"></h3>
+      <p data-i18n="o3_d"></p>
+      <div class="row"><span class="offer-price js-price" data-price="150"></span>
+        <button class="add-btn" data-id="o3" data-price="150" data-i18n="add"></button></div>
+    </div>
+    <div class="offer-card">
+      <h3 data-i18n="o4_t"></h3>
+      <p data-i18n="o4_d"></p>
+      <div class="row"><span class="offer-price js-price" data-price="145"></span>
+        <button class="add-btn" data-id="o4" data-price="145" data-i18n="add"></button></div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <h2 data-i18n="story_h"></h2>
+  <p data-i18n="story_p"></p>
+</section>
+
+<section class="reviews" id="reviews">
+  <h2 data-i18n="rev_h"></h2>
+  <div class="rating-summary">
+    <span id="avgStars" class="avg-stars">☆☆☆☆☆</span>
+    <span id="avgText"></span>
+  </div>
+  <form class="review-form" id="reviewForm">
+    <input type="text" id="revName" data-i18n-ph="rev_name_ph">
+    <div class="star-picker" id="starPicker">
+      <span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span>
+    </div>
+    <textarea id="revComment" rows="2" data-i18n-ph="rev_comment_ph"></textarea>
+    <button type="submit" class="cta small" data-i18n="rev_post"></button>
+  </form>
+  <div class="review-list" id="reviewList"></div>
+</section>
+
+</div>
+
+<footer id="contact">
+  <span class="brand" data-i18n="brand">المزاج</span>
+  <div class="branches">
+    <div class="branch"><h4 data-i18n="br1_t"></h4><p data-i18n="br1_d"></p></div>
+    <div class="branch"><h4 data-i18n="br2_t"></h4><p data-i18n="br2_d"></p></div>
+  </div>
+  <p class="phones">
+    <span data-i18n="foot_orders"></span> <a href="tel:17640">17640</a> ·
+    <span data-i18n="foot_wa"></span> <a href="https://wa.me/201010157407">01010157407</a>
+  </p>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3 data-i18n="cart_title"></h3>
+    <button class="cart-close" id="cartClose" data-i18n-aria="close">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-total-row">
+      <span data-i18n="cart_total"></span>
+      <span id="cartTotal"></span>
+    </div>
+    <div class="order-form">
+      <label><span data-i18n="f_name"></span>
+        <input type="text" id="custName" data-i18n-ph="f_name_ph">
+      </label>
+      <label><span data-i18n="f_phone"></span>
+        <input type="tel" id="custPhone" placeholder="01xxxxxxxxx">
+      </label>
+      <label><span data-i18n="f_addr"></span>
+        <textarea id="custAddress" rows="2" data-i18n-ph="f_addr_ph"></textarea>
+      </label>
+    </div>
+    <a class="whatsapp-order-btn" id="whatsappOrderBtn" href="#" target="_blank" rel="noopener" data-i18n="order_wa"></a>
+  </div>
+</aside>
+
+<button class="cart-float" id="cartFloat" data-i18n-aria="cart_aria">
+  🛒<span class="cart-float-badge" id="cartCountFloat">0</span>
+</button>
+
+<a class="wa-float" id="waFloat" href="https://wa.me/201010157407" target="_blank" rel="noopener" data-i18n-aria="wa_aria">
+  <svg viewBox="0 0 32 32" width="30" height="30"><path fill="#fff" d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.9c1.9 1.1 4.1 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.2 1.1 1.1-4-.2-.4a10.2 10.2 0 0 1-1.6-5.4c0-5.7 4.7-10.3 10.6-10.3s10.6 4.6 10.6 10.3S21.9 25.7 16 25.7zm5.8-7.7c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.1-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
